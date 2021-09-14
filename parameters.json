@@ -1,0 +1,51 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "westeurope"
+        },
+        "networkInterfaceName": {
+            "value": "servior-vm161"
+        },
+        "networkSecurityGroupName": {
+            "value": "servior-vm-nsg"
+        },
+        "networkSecurityGroupRules": {
+            "value": []
+        },
+        "subnetName": {
+            "value": "SN-SRV-PPD"
+        },
+        "virtualNetworkId": {
+            "value": "/subscriptions/e57ab98e-3b7c-405e-b754-479198ec1529/resourceGroups/RG-vNet-Spoke/providers/Microsoft.Network/virtualNetworks/vNet-PPD"
+        },
+        "virtualMachineName": {
+            "value": "servior-vm"
+        },
+        "virtualMachineComputerName": {
+            "value": "servior-vm"
+        },
+        "virtualMachineRG": {
+            "value": "RG-Info-PPD"
+        },
+        "osDiskType": {
+            "value": "Premium_LRS"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_B2s"
+        },
+        "adminUsername": {
+            "value": "seradmin"
+        },
+        "adminPassword": {
+            "value": null
+        },
+        "patchMode": {
+            "value": "Manual"
+        },
+        "enableHotpatching": {
+            "value": false
+        }
+    }
+}
